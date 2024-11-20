@@ -12,8 +12,8 @@ app.use('/', routes)
 
 
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`Server is running ${port}`)
 });
 
-export default app;
+export { app, server };
