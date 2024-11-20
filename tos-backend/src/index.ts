@@ -1,4 +1,4 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
 import morgan from 'morgan';
 import routes from './routes/routes'
 
@@ -15,3 +15,5 @@ app.use('/', routes)
 app.listen(port, () => {
   console.log(`Server is running ${port}`)
 });
+
+export default app;
